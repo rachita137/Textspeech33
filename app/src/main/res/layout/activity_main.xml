@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/abc">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp">
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/bspeak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:onClick="doSomething"
+        android:text="Speak" />
+
+    <Button
+        android:id="@+id/bstopspeaking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bspeak"
+        android:layout_alignLeft="@+id/bspeak"
+        android:layout_marginTop="42dp"
+        android:onClick="doSomething"
+        android:text="STop" />
+
+
+    <Button
+        android:id="@+id/speechbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bspeak"
+        android:layout_alignLeft="@+id/bspeak"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="109dp"
+        android:onClick="doSomething"
+        android:text="speech" />
+
+
+</RelativeLayout>
